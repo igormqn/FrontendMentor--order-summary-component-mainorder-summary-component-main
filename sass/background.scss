@@ -1,0 +1,48 @@
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+    padding-top: 100px;
+    background: $color2;
+    @media screen and (max-width: 768px){
+        background: $color1;
+    }
+}
+
+.curve {
+position: absolute;
+height: 250px;
+width: 100%;
+bottom: 0;
+text-align: center;
+}
+
+.curve::before {
+    content: ' ';
+    display: block;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(225, 100%, 94%);
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: hsl(224, 23%, 88%);
+    top: 0rem;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+    @media screen and (max-width: 768px){
+        background: $color1;
+    }
+}
+

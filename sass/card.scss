@@ -1,0 +1,107 @@
+.card {
+    background-color: white;
+    height: 450px;
+    position: absolute;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.hero-img img {
+    width: 300px;
+    border-radius: 1rem 1rem 0 0;
+}
+.script-block {
+    text-align: center;
+}
+
+.script-block h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.script-block p {
+    font-size: 0.8rem;
+    color: $color2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 400;
+    @media screen and (max-width: 768px){
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+}
+
+.annual-plan {
+    background-color: hsl(224deg, 23%, 98%);
+    width: 250px;
+    height: 75px;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.annual-plan svg {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.price-block {
+   text-align: center;
+   padding-top: 1.4rem;
+   gap: 0.1rem;
+}
+.price-block h2 {
+    font-size: 0.7rem;
+    color: $color3;
+    margin: 0;
+}
+.price-block p {
+    font-size: 0.7rem;
+    color: hsl(224, 23%, 55%);
+    margin: 0.2rem;
+    font-weight: 100;
+}
+.change {
+    margin-top: -1.7rem;
+}
+.change a {
+    font-size: 0.6rem;
+    color: $color4;
+    font-weight: 600;
+    margin-left: 12rem;
+    margin-bottom: 1rem;
+}
+.payment-button button {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: $color4;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: white;
+    width: 240px;
+    height: 35px;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: -1px -4px 42px 2px rgba(0,0,0,0.24);
+    -webkit-box-shadow: -1px -4px 42px 2px rgba(0,0,0,0.24);
+    -moz-box-shadow: -1px -4px 42px 2px rgba(0,0,0,0.24);
+    @media screen and (max-width: 768px){
+        height: 50px;
+        font-size: 0.9rem;
+    }
+}
+
+.payment-button p{
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    top: 1rem;
+    @media screen and (max-width: 768px){
+      
+        font-size: 0.8rem;
+    }
+}
